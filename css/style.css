@@ -6,7 +6,6 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
 }
 
 :root{
@@ -40,7 +39,7 @@ ul{
 
 li a{
     padding: var(--space);
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
 }
@@ -65,22 +64,41 @@ button{
     padding: 50px 100px;
 }
 
+.container:nth-child(odd){
+    background-color: #ffffff;
+}
+
+.container.even{
+    background-color: #f6f6f6;
+}
+
+.wave svg{
+    color: #f6f6f6;
+    display: block;
+    width: 100%;
+}
+
+.wave.turned{
+    transform: rotate(180deg);
+}
+
 /* prima sezione */
-.container-one{
+.jumbo{
     background-image: url(../img/jumbo.png);
     background-size: cover;
 }
 
-.section-one{
+.section-jumbo{
     flex-basis: 50%;
     height: 380px;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 h1{
     padding: 40px;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 p{
@@ -98,23 +116,19 @@ p{
 }
 
 .btn-w{
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .btn-b{
     background-color: #23272a;
-    color: white;
-
+    color: #ffffff;
 }
 
 /* seconda sezione */
 
-.container-w{
-    background-color: white;
-}
-
 h2{
     font-size: 37px;
+    font-weight: bold;
 }
 
 .section-w-left{
@@ -127,33 +141,36 @@ h2{
 
 /* terza sezione */
 
-.container-g{
-    background-color: #d3d3d3;
-}
-
 .section-g-left{
     flex-basis: 60%;
-    background-color: #1e90ff;
-    height: 380px;
 }
 
 .section-g-right{
-    flex-basis: 40%;
-    background-color: #ffc0cb;
-    height: 380px;
+    flex-basis: 35%;
 }
 
 /* ultima sezione */
 
 .section-last{
-    flex-basis: 100%;
-    background-color: #228b22;
-    height: 600px;
+    flex-basis: 80%;
+    text-align: center;
+}
+
+.star{
+    background-image: url(../img/stars.svg);
+    background-position: center;
+    height: 45px;
+}
+
+
+.btn-s{
+    background-color: #8ea1e1;
+    color: #ffffff;
 }
 
 /* footer */
 
-.container-b{
+.container.footer-container{
     background-color: #23272a;
 }
 
@@ -170,7 +187,7 @@ h2{
     display: flex;
 }
 
-.colum{
+.column{
     flex-basis: 25%;
     border: 2px dashed black;
 }
@@ -178,7 +195,6 @@ h2{
 /* bottoni finali */
 
 .bottom{
-    margin-top: 2px;
     background-color: #23272a;
     display: flex;
     align-items: center;
@@ -187,8 +203,8 @@ h2{
 }
 
 .footer-left{
-    background-color: #7fffd4;
     border: 0;
+    border-top: 1px solid #ffffff;
     display: flex;
     justify-content: space-between;
 }
