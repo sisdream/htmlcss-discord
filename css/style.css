@@ -165,6 +165,7 @@ h2{
 .btn-s{
     background-color: #8ea1e1;
     color: #ffffff;
+    border: 0;
 }
 
 /* footer */
@@ -176,7 +177,7 @@ h2{
 .footer-title{
     color: #738adc;
     text-align: start;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 span{
@@ -191,14 +192,18 @@ span{
     height: 16px;
 }
 
+.social{
+    padding: 20px 0;
+    gap: 15px;
+}
+
 .section-b-left{
-    flex-basis: 40%;
+    flex-basis: 30%;
     height: 380px;
 }
 
 .section-b-right{
     flex-basis: 60%;
-    background-color: #20b2aa;
     height: 380px;
     display: flex;
 }
@@ -207,17 +212,18 @@ span{
     display: flex;
     flex-direction: column;
     line-height: 30px;
+    font-size: 13px;
+    text-align: start;
 }
 
 .title-nav{
     color: #738adc;
-    text-align: center;
+    text-align: start;
     padding-bottom: 10px;
 }
 
 .column{
     flex-basis: 25%;
-    border: 2px dashed black;
 }
 
 /* bottoni finali */
@@ -232,19 +238,11 @@ span{
 
 .footer-left{
     border: 0;
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid  #738adc;
     display: flex;
     justify-content: space-between;
 }
 
-.left-logo{
-    border: 2px dashed black;
-    padding: var(--space) ;
-    background-color: #ffb6c1;
-}
-
 .left-bottom{
-    border: 2px dashed black;
     padding: var(--space) ;
-    background-color: #ffb6c1;
 }
