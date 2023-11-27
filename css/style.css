@@ -162,7 +162,6 @@ h2{
     height: 45px;
 }
 
-
 .btn-s{
     background-color: #8ea1e1;
     color: #ffffff;
@@ -174,9 +173,26 @@ h2{
     background-color: #23272a;
 }
 
+.footer-title{
+    color: #738adc;
+    text-align: start;
+    padding-bottom: 10px;
+}
+
+span{
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+    padding: 0 2px;
+    font-size: 14px;
+}
+
+.bandiera{
+    height: 16px;
+}
+
 .section-b-left{
     flex-basis: 40%;
-    background-color: #f08080;
     height: 380px;
 }
 
@@ -185,6 +201,18 @@ h2{
     background-color: #20b2aa;
     height: 380px;
     display: flex;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.title-nav{
+    color: #738adc;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .column{
